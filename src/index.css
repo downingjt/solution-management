@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#1C1C1C] text-gray-100;
+  }
+}
+
+@layer components {
+  .sidebar-link {
+    @apply flex items-center gap-2 px-3 py-2 text-gray-300 hover:bg-gray-800 rounded-md transition-colors;
+  }
+
+  .btn-primary {
+    @apply bg-[#CD6543] hover:bg-[#B85A3B] text-white px-4 py-2 rounded-md transition-colors;
+  }
+
+  .btn-secondary {
+    @apply bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-md transition-colors;
+  }
+
+  .input-field {
+    @apply bg-gray-800 border-gray-700 text-gray-100 rounded-md focus:ring-[#CD6543] focus:border-[#CD6543];
+  }
+
+  .table-header {
+    @apply bg-gray-800 text-gray-300 font-medium;
+  }
+
+  .table-row {
+    @apply border-gray-700 hover:bg-gray-800;
+  }
+
+  .status-badge {
+    @apply px-2 py-1 rounded-full text-xs font-medium;
+  }
+
+  .status-active {
+    @apply bg-green-900 text-green-300;
+  }
+
+  .status-pending {
+    @apply bg-yellow-900 text-yellow-300;
+  }
+}
